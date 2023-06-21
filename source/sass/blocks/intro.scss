@@ -1,13 +1,23 @@
 .intro {
   background-color: #81b3d2;
   color: #ffffff;
-  background-image: url("../img/background/intro-background.jpg");
+  background-image: url("../img/background/intro-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
   padding: 90px 18px 85px 18px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/intro-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 77px 154px 91px 153px;
+    background-image: url("../img/background/intro-background-tabl-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/intro-background-tabl-desk@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
