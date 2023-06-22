@@ -28,6 +28,17 @@
 .intro--minor {
   padding: 52px 46px 67px 45px;
 
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../img/background/intro-background-minor.jpg");
+    background-repeat: no-repeat;
+    background-size: 282%;
+    background-position: bottom right 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/intro-background-minor@2x.jpg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 95px 154px 118px 157px;
   }
