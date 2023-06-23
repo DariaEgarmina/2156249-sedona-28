@@ -1,5 +1,7 @@
 .video-presentation {
   padding: 0 18px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 58px 60px 40px 60px;
@@ -32,6 +34,10 @@
 
 .video-presentation__video {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .video-presentation__link {

@@ -62,8 +62,20 @@
           <li class="photo-gallery__item photo-gallery__item--full card">
             <figure class="card__image-text-wrapper card__image-text-wrapper--full">
               <a class="card__link" href="#">
-                <img class="card__image" src="img/content/photo-gallery/photo-sunset.jpg" width="280" height="280"
-                  alt="Вид на дорогу и ярко-оранжевый закат." />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                        img/content/photo-gallery/photo-sunset-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-sunset-tabl-desk@2x.jpg 2x
+                      " width="1200" height="400" />
+                  <source media="(min-width: 768px)" srcset="
+                        img/content/photo-gallery/photo-sunset-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-sunset-tabl-desk@2x.jpg 2x
+                      " width="648" height="400" />
+                  <img class="card__image" src="img/content/photo-gallery/photo-sunset-mobile.jpg" width="280"
+                    height="280" style="object-fit: cover" srcset="
+                        img/content/photo-gallery/photo-sunset-mobile@2x.jpg
+                      " alt="Вид на дорогу и ярко-оранжевый закат." />
+                </picture>
               </a>
               <figcaption class="card__text-wrapper">
                 <div class="card__text-inner-wrapper">
@@ -82,8 +94,20 @@
           <li class="photo-gallery__item card">
             <figure class="card__image-text-wrapper">
               <a class="card__link" href="#">
-                <img class="card__image" src="img/content/photo-gallery/photo-cactus.jpg" width="280" height="280"
-                  alt="Экзотический кактус с жёлтыми цветами." />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                        img/content/photo-gallery/photo-cactus-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-cactus-tabl-desk@2x.jpg 2x
+                      " width="400" height="267" />
+                  <source media="(min-width: 768px)" srcset="
+                        img/content/photo-gallery/photo-cactus-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-cactus-tabl-desk@2x.jpg 2x
+                      " width="324" height="267" />
+                  <img class="card__image" src="img/content/photo-gallery/photo-cactus-mobile.jpg" width="280"
+                    height="280" style="object-fit: cover" srcset="
+                        img/content/photo-gallery/photo-cactus-mobile@2x.jpg
+                      " alt="Экзотический кактус с жёлтыми цветами." />
+                </picture>
               </a>
               <figcaption class="card__text-wrapper">
                 <div class="card__text-inner-wrapper">
@@ -102,8 +126,20 @@
           <li class="photo-gallery__item card">
             <figure class="card__image-text-wrapper">
               <a class="card__link" href="#">
-                <img class="card__image" src="img/content/photo-gallery/photo-road.jpg" width="280" height="280"
-                  alt="Вид сверху на серпантин, идущий через хвойные леса." />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                        img/content/photo-gallery/photo-road-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-road-tabl-desk@2x.jpg 2x
+                      " width="400" height="267" />
+                  <source media="(min-width: 768px)" srcset="
+                        img/content/photo-gallery/photo-road-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-road-tabl-desk@2x.jpg 2x
+                      " width="324" height="267" />
+                  <img class="card__image" src="img/content/photo-gallery/photo-road-mobile.jpg" width="280"
+                    height="280" style="object-fit: cover" srcset="
+                        img/content/photo-gallery/photo-road-mobile@2x.jpg
+                      " alt="Вид сверху на серпантин, идущий через хвойные леса." />
+                </picture>
               </a>
               <figcaption class="card__text-wrapper card__text-wrapper--dark">
                 <div class="card__text-inner-wrapper">
@@ -122,8 +158,20 @@
           <li class="photo-gallery__item card">
             <figure class="card__image-text-wrapper">
               <a class="card__link" href="#">
-                <img class="card__image" src="img/content/photo-gallery/photo-bridge.jpg" width="280" height="280"
-                  alt="Вид на мост дьявола." />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                        img/content/photo-gallery/photo-bridge-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-bridge-tabl-desk@2x.jpg 2x
+                      " width="400" height="267" />
+                  <source media="(min-width: 768px)" srcset="
+                        img/content/photo-gallery/photo-bridge-tabl-desk.jpg    1x,
+                        img/content/photo-gallery/photo-bridge-tabl-desk@2x.jpg 2x
+                      " width="324" height="267" />
+                  <img class="card__image" src="img/content/photo-gallery/photo-bridge-mobile.jpg" width="280"
+                    height="280" style="object-fit: cover" srcset="
+                        img/content/photo-gallery/photo-bridge-mobile@2x.jpg
+                      " alt="Вид на мост дьявола." />
+                </picture>
               </a>
               <figcaption class="card__text-wrapper">
                 <div class="card__text-inner-wrapper">
@@ -152,8 +200,20 @@
           </p>
         </div>
         <div class="video-presentation__video">
-          <img class="video-presentation__poster" src="img/content/video-presentation/video-poster.jpg" width="280"
-            height="177" alt="Видео постер, на котором машины едут по дороге между скал." />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="
+                  img/content/video-presentation/video-poster-tabl-desk.jpg 1x,
+                  img/content/video-presentation/video-poster-tabl-desk@2x.jpg 2x
+                " width="800" height="500" />
+            <source media="(min-width: 768px)" srcset="
+                  img/content/video-presentation/video-poster-tabl-desk.jpg 1x,
+                  img/content/video-presentation/video-poster-tabl-desk@2x.jpg 2x
+                " width="648" height="500" />
+            <img class="video-presentation__poster" src="img/content/video-presentation/video-poster-mobile.jpg"
+              width="280" height="177" style="object-fit: cover" srcset="
+                  img/content/video-presentation/video-poster-mobile@2x.jpg
+                " alt="Видео постер, на котором машины едут по дороге между скал." />
+          </picture>
           <a class="video-presentation__link" href="#">
             <svg class="video-presentation__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="54" fill="none">
               <path class="video-presentation__path" fill="#fff" fill-opacity=".7" d="M48 27 0 54V0l48 27Z" />
