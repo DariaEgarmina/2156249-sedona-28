@@ -43,7 +43,7 @@
       <section class="intro">
         <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
         <picture>
-          <source media="(min-width: 768px)" srcset="img/svg/intro-banner-tablet.svg" width="461" height="350">
+          <source media="(min-width: 768px)" srcset="img/svg/intro-banner-tablet.svg" width="461" height="350" />
           <img class="intro__image" src="img/svg/intro-banner.svg" width="282" height="214"
             alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" />
         </picture>
@@ -73,8 +73,19 @@
                   </p>
                 </div>
               </figcaption>
-              <img class="advantages__image" src="img/content/advantages/sedona-view.jpg" width="320" height="260"
-                alt="Вид на уютные дома Седоны." />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                      img/content/advantages/sedona-view-desktop.jpg 1x,
+                      img/content/advantages/sedona-view-desktop@2x.jpg 2x
+                    " width="800" height="256" />
+                <source media="(min-width: 768px)" srcset="
+                      img/content/advantages/sedona-view-tablet.jpg 1x,
+                      img/content/advantages/sedona-view-tablet@2x.jpg 2x
+                    " width="512" height="256" />
+                <img class="advantages__image" src="img/content/advantages/sedona-view-mobile.jpg" width="320"
+                  height="260" style="object-fit: cover" srcset="img/content/advantages/sedona-view-mobile@2x.jpg 2x"
+                  alt="Вид на уютные дома Седоны." />
+              </picture>
             </figure>
           </li>
           <li class="advantages__item advantages__item--extra">
@@ -140,8 +151,19 @@
                   </p>
                 </div>
               </figcaption>
-              <img class="advantages__image advantages__image--bridge" src="img/content/advantages/bridge-view.jpg"
-                width="320" height="260" alt="Вид на мост дьявола." />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                      img/content/advantages/bridge-view-desktop.jpg 1x,
+                      img/content/advantages/bridge-view-desktop@2x.jpg 2x
+                    " width="800" height="256" />
+                <source media="(min-width: 768px)" srcset="
+                      img/content/advantages/bridge-view-tablet.jpg 1x,
+                      img/content/advantages/bridge-view-tablet@2x.jpg 2x
+                    " width="512" height="256" />
+                <img class="advantages__image advantages__image--bridge"
+                  src="img/content/advantages/bridge-view-mobile.jpg" width="320" height="260" style="object-fit: cover"
+                  srcset="img/content/advantages/bridge-view-mobile@2x.jpg" alt="Вид на мост дьявола." />
+              </picture>
             </figure>
           </li>
           <li class="advantages__item advantages__item--small advantages__item--dark-background">
