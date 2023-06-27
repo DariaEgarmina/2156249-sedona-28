@@ -40,6 +40,10 @@
   }
 }
 
+.video-presentation__poster {
+  display: block;
+}
+
 .video-presentation__link {
   width: 48px;
   height: 54px;
@@ -51,10 +55,9 @@
   bottom: 0;
 }
 
-.video-presentation__link:hover .video-presentation__path {
-  fill: #e5e5e5;
-}
-
-.video-presentation__link:active .video-presentation__path {
-  fill: #d5d5d5;
+.video-presentation__link::before {
+  content: url("../../img/svg/icon-arrow.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
 }

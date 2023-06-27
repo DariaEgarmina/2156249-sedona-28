@@ -39,31 +39,43 @@
 .main-footer__copyright {
   text-decoration: none;
   margin: 0 auto;
+  padding-right: 40px;
   display: flex;
   align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
 
+.main-footer__copyright::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 27px;
+  height: 36px;
+  mask: url("../img/svg/icon-htmlacademy.svg");
+  -webkit-mask-image: url("../img/svg/icon-htmlacademy.svg");
+  background-color: #000000;
+}
+
 .main-footer__copyright-text {
   color: #000000;
-  margin-right: 4px;
 }
 
 .main-footer__copyright:hover .main-footer__copyright-text {
   color: #81b3d2;
 }
 
-.main-footer__copyright:hover .main-footer__copyright-path {
-  fill: #81b3d2;
+.main-footer__copyright:hover::before {
+  background-color: #81b3d2;
 }
 
 .main-footer__copyright:active .main-footer__copyright-text {
   color: #b3b3b3;
 }
 
-.main-footer__copyright:active .main-footer__copyright-path {
-  fill: #b3b3b3;
+.main-footer__copyright:active::before {
+  background-color: #b3b3b3;
 }
