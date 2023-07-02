@@ -179,6 +179,30 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Месторасположение городка Седоны.</h2>
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/content/map/map-desktop.webp    1x,
+                img/content/map/map-desktop@2x.webp 2x
+              " />
+          <source type="image/webp" media="(min-width: 768px)" srcset="
+                img/content/map/map-tablet.webp    1x,
+                img/content/map/map-tablet@2x.webp 2x
+              " />
+          <source type="image/webp" srcset="
+                img/content/map/map-mobile.webp    1x,
+                img/content/map/map-mobile@2x.webp 2x
+              " />
+          <source media="(min-width: 1200px)" srcset="
+                img/content/map/map-desktop.jpg    1x,
+                img/content/map/map-desktop@2x.jpg 2x
+              " />
+          <source media="(min-width: 768px)" srcset="
+                img/content/map/map-tablet.jpg    1x,
+                img/content/map/map-tablet@2x.jpg 2x
+              " />
+          <img class="map__image" src="img/content/map/map-mobile.jpg" width="320" height="350"
+            srcset="img/content/map/map-mobile@2x.jpg 2x" alt="Карта Седоны." />
+        </picture>
         <div class="map__iframe-wrapper">
           <iframe class="map__iframe"
             src="https://yandex.ru/map-widget/v1/?ll=-111.167527%2C34.900132&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwMjg5OTA3EjpVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIEFyaXpvbmEsIENvY29uaW5vIENvdW50eSwgU2Vkb25hIgoNOIXfwhVeegtC&z=9.51"
