@@ -42,6 +42,10 @@
 
 .video-presentation__poster {
   display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .video-presentation__link {
@@ -53,11 +57,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-}
-
-.video-presentation__link::before {
-  content: url("../../img/svg/icon-arrow.svg");
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-image: url("../img/sprite/sprite.svg#icon-arrow");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

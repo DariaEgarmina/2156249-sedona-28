@@ -135,7 +135,7 @@
 }
 
 .advantages__item--home::before {
-  background-image: url("../img/svg/icon-home.svg");
+  background-image: url("../img/sprite/sprite.svg#icon-home");
   width: 39px;
   height: 37px;
 
@@ -146,7 +146,7 @@
 }
 
 .advantages__item--food::before {
-  background-image: url("../img/svg/icon-burger.svg");
+  background-image: url("../img/sprite/sprite.svg#icon-burger");
   width: 40px;
   height: 35px;
 
@@ -157,7 +157,7 @@
 }
 
 .advantages__item--gift::before {
-  background-image: url("../img/svg/icon-gift.svg");
+  background-image: url("../img/sprite/sprite.svg#icon-gift");
   width: 40px;
   height: 40px;
 
