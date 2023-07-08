@@ -26,6 +26,10 @@
   display: flex;
   margin-bottom: 15px;
 
+  &:hover {
+    opacity: 0.9;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }

@@ -27,17 +27,23 @@
 .control__checkbox-mark {
   width: 46px;
   height: 46px;
-  border-radius: 4%;
+  border-radius: 4px;
   background-color: #f2f2f2;
   margin-right: 16px;
   position: relative;
 }
 
 .control__checkbox:checked + .control__checkbox-mark::before {
-  content: url("../img/svg/icon-tick.svg");
+  content: "";
   position: absolute;
   top: 15px;
   left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../img/stack/stack.svg#icon-tick);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .control:hover .control__radio-mark,

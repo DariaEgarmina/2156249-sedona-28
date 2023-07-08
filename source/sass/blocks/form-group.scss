@@ -157,6 +157,33 @@
   }
 }
 
+.form-group__label {
+  display: block;
+  position: relative;
+
+  &--tel::before {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/stack/stack.svg#icon-tel);
+    background-repeat: no-repeat;
+  }
+
+  &--email::before {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/stack/stack.svg#icon-email);
+    background-repeat: no-repeat;
+  }
+}
+
 .form-group__input {
   width: 100%;
 
@@ -190,19 +217,6 @@
   &--tel,
   &--email {
     padding-right: 58px;
-    position: relative;
-  }
-
-  &--tel {
-    background-image: url("../img/svg/icon-tel.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
-  &--email {
-    background-image: url("../img/sprite/sprite.svg#icon-email");
-    background-repeat: no-repeat;
-    background-position: right;
   }
 
   &--tel:focus-visible,

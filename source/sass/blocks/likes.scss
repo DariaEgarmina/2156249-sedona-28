@@ -10,13 +10,17 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  background-image: url("../img/sprite/sprite.svg#icon-like");
+  background-image: url("../img/stack/stack.svg#icon-like");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
   @media (min-width: $desktop-width) {
-    background-image: url("../img/sprite/sprite.svg#icon-like-white");
+    background-image: url("../img/stack/stack.svg#icon-like-white");
   }
 }
 

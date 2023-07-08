@@ -57,7 +57,11 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url("../img/sprite/sprite.svg#icon-arrow");
+  background-image: url("../img/stack/stack.svg#icon-arrow");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
