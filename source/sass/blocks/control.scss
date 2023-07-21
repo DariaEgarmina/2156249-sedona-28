@@ -40,7 +40,7 @@
   left: 12px;
   width: 22px;
   height: 16px;
-  background-image: url(../img/stack/stack.svg#icon-tick);
+  background-image: url("../img/stack/stack.svg#icon-tick");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,4 +75,5 @@
   line-height: 26px;
   color: #000000;
   text-transform: none;
+  max-width: 300px;
 }

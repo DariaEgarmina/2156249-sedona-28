@@ -92,16 +92,16 @@
       display: none;
     }
   }
-}
 
-.photo-gallery__item--full {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
+  &--full {
     width: 100%;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 }

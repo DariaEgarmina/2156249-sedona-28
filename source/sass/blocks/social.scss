@@ -15,42 +15,42 @@
   height: 48px;
   width: 48px;
   background-color: #81b3d2;
-}
 
-.social__link:hover {
-  background-color: #669ec0;
-}
+  &:hover {
+    background-color: #669ec0;
+  }
 
-.social__link:active {
-  background-color: #5496bd;
-}
+  &:active {
+    background-color: #5496bd;
+  }
 
-.social__link:active::before {
-  opacity: 0.3;
-}
+  &:active::before {
+    opacity: 0.3;
+  }
 
-.social__link::before {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 
-.social__link--vk::before {
-  background-image: url("../img/stack/stack.svg#icon-vk");
-  width: 24px;
-  height: 24px;
-}
+  &--vk::before {
+    background-image: url("../img/stack/stack.svg#icon-vk");
+    width: 24px;
+    height: 24px;
+  }
 
-.social__link--tme::before {
-  background-image: url("../img/stack/stack.svg#icon-tme");
-  width: 24px;
-  height: 24px;
-}
+  &--tme::before {
+    background-image: url("../img/stack/stack.svg#icon-tme");
+    width: 24px;
+    height: 24px;
+  }
 
-.social__link--youtube::before {
-  background-image: url("../img/stack/stack.svg#icon-youtube");
-  width: 24px;
-  height: 24px;
+  &--youtube::before {
+    background-image: url("../img/stack/stack.svg#icon-youtube");
+    width: 24px;
+    height: 24px;
+  }
 }

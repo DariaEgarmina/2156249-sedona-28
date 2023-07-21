@@ -58,6 +58,8 @@
 .card__figcaption {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-between;
     padding: 22px 20px 15px 20px;
     background-color: #f2f2f2;
@@ -66,7 +68,6 @@
   @media (min-width: $desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    flex-grow: 1;
   }
 
   &--dark {
@@ -105,6 +106,7 @@
 
 .card__likes {
   @media (min-width: $tablet-width) {
-    align-self: center;
+    align-self: flex-start;
+    margin-top: 10px;
   }
 }
