@@ -1,1 +1,80 @@
-// пока пусто
+.modal-content {
+  width: 320px;
+  padding: 45px 42px 35px 41px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding: 55px 47px 49px 46px;
+  }
+
+  &--success {
+    padding: 36px 39px 118px 37px;
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+      padding: 53px 99px 166px 97px;
+    }
+  }
+}
+
+.modal-content__title {
+  margin: 0 0 26px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  &--success {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+}
+
+.modal-content__text {
+  margin: 0 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.modal-content__button-wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+.modal-content__button {
+  padding: 18px 5px 14px 5px;
+
+  &--ok {
+    min-width: 180px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 272px;
+    }
+  }
+
+  &--close {
+    min-width: 280px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 458px;
+    }
+  }
+}
