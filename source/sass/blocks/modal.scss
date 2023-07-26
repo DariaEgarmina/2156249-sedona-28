@@ -6,13 +6,9 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 3;
+  display: none;
 
-  &--failure {
-    display: none;
-    // display: flex;
-  }
-
-  &--success {
-    display: none;
+  &--open {
+    display: flex;
   }
 }

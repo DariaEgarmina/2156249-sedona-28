@@ -1,12 +1,32 @@
 .advantages {
   padding: 32px 0 0 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 0 0 0;
+    padding: 49px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 59px 0 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    top: -56px;
+    background-image: url("../img/svg/intro-triangle.svg");
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/svg/intro-triangle.svg");
+    }
   }
 }
 
@@ -29,10 +49,10 @@
 }
 
 .advantages__heading-title {
-  margin: 0 0 35px 0;
+  margin: 0 0 38px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 26px 0;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -58,15 +78,15 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% / 3);
-    padding: 156px 33px 60px 33px;
+    padding: 159px 33px 60px 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 169px 50px 69px 50px;
+    padding: 169px 50px 64px 50px;
   }
 
   &:first-child {
-    clip-path: polygon(50% 5%, 100% 2%, 100% 100%, 0 100%, 0 2%);
+    clip-path: polygon(50% 4%, 100% 1%, 100% 100%, 0 100%, 0 1%);
 
     @media (min-width: $tablet-width) {
       clip-path: none;
@@ -82,7 +102,7 @@
   }
 
   &--home {
-    margin: 31px 18px 25px 18px;
+    margin: 29px 18px 25px 18px;
     text-align: left;
 
     @media (min-width: $tablet-width) {
@@ -96,18 +116,29 @@
     text-align: left;
 
     @media (min-width: $tablet-width) {
+      padding-top: 156px;
       margin: 0;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 166px;
     }
   }
 
   &--gift {
-    margin: 0 18px 46px 18px;
+    margin: 0 18px 47px 18px;
     text-align: left;
 
     @media (min-width: $tablet-width) {
+      padding-top: 154px;
       margin: 0;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 170px;
+      padding-bottom: 48px;
     }
   }
 
@@ -123,13 +154,13 @@
     background-size: contain;
 
     @media (min-width: $tablet-width) {
-      top: 62px;
+      top: 58px;
       left: 50%;
       transform: translateX(-50%);
     }
 
     @media (min-width: $desktop-width) {
-      top: 70px;
+      top: 65px;
     }
   }
 
@@ -140,7 +171,7 @@
 
     @media (min-width: $tablet-width) {
       width: 77px;
-      height: 72px;
+      height: 79px;
     }
   }
 
@@ -151,7 +182,7 @@
 
     @media (min-width: $tablet-width) {
       width: 80px;
-      height: 68px;
+      height: 78px;
     }
   }
 
@@ -161,8 +192,8 @@
     height: 40px;
 
     @media (min-width: $tablet-width) {
-      width: 67px;
-      height: 75px;
+      width: 89px;
+      height: 84px;
     }
 
     @media (min-width: $desktop-width) {
@@ -172,14 +203,14 @@
 
   &--order {
     background-color: #eeeeee;
-    padding: 24px 26px;
+    padding: 26px;
 
     @media (min-width: $tablet-width) {
-      padding: 41px 33px 63px 33px;
+      padding: 41px 33px 41px 33px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 52px 50px;
+      padding: 59px 50px 52px 50px;
     }
   }
 
@@ -195,6 +226,18 @@
 
     @media (min-width: $tablet-width) {
       display: none;
+    }
+  }
+
+  &--tourists {
+    padding-top: 21px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 60px;
     }
   }
 }
@@ -228,8 +271,18 @@
   }
 
   &--reverse {
+    padding-top: 38px;
+    padding-bottom: 39px;
+
     @media (min-width: $tablet-width) {
+      padding-top: 52px;
+      padding-bottom: 32px;
       order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 59px;
+      padding-bottom: 46px;
     }
   }
 }
@@ -258,14 +311,128 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 13px;
+  }
+
+  &--town {
+    @media (min-width: $desktop-width) {
+      width: 122px;
+      margin: 0 auto 13px auto;
+    }
+  }
+
+  &--home,
+  &--food,
+  &--gift {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 2px;
+    }
+  }
+
+  &--bridge {
+    @media (min-width: $tablet-width) {
+      width: 150px;
+      margin: 0 auto 13px auto;
+    }
+  }
+
+  &--road {
+    @media (min-width: $tablet-width) {
+      width: 150px;
+      margin: 0 auto 13px auto;
+    }
+  }
+
+  &--tourists {
+    @media (min-width: $tablet-width) {
+      width: 150px;
+      margin: 0 auto 13px auto;
+    }
+  }
+
+  &--area {
+    @media (min-width: $desktop-width) {
+      width: 150px;
+      margin: 0 auto 13px auto;
+    }
   }
 }
 
 .advantages__number {
   display: block;
   margin-bottom: 17px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description {
   margin: 0;
+
+  &--town {
+    @media (min-width: $desktop-width) {
+      width: 270px;
+      margin: 0 auto;
+    }
+  }
+
+  &--food {
+    @media (min-width: $tablet-width) {
+      width: 152px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $tablet-width) {
+      width: 183px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 220px;
+      white-space: pre-line;
+    }
+  }
+
+  &--road {
+    width: 257px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 163px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 276px;
+    }
+  }
+
+  &--tourists {
+    @media (max-width: $mobile-width-only) {
+      width: 257px;
+      margin: 0 auto;
+    }
+  }
+
+  &--bridge {
+    @media (min-width: $desktop-width) {
+      width: 220px;
+      margin: 0 auto;
+    }
+  }
 }

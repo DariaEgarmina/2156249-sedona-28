@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <style>:root svg:not(:target) {display: none;}</style>
 
+  <svg id="intro-triangle" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z" fill="white" />
+    <path d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z" fill="white" />
+  </svg>
+
   <svg id="icon-home" viewBox="0 0 40 40">
     <path fill="#81B3D2" d="M15.902 34.804h8.353V22.646h-8.353v12.158Zm6.839-1.475h-5.325V24.12h5.273v9.208h.052Z" />
     <path fill="#81B3D2"
