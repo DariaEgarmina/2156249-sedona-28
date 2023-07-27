@@ -1,5 +1,5 @@
 .photo-gallery {
-  padding: 38px 18px 0 18px;
+  padding: 38px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 66px 60px 0 60px;
@@ -11,7 +11,7 @@
 }
 
 .photo-gallery__heading {
-  margin: 0 auto 63px auto;
+  margin: 0 auto 60px auto;
   max-width: 458px;
   position: relative;
 
@@ -39,10 +39,19 @@
 
 .photo-gallery__heading-title {
   margin: 0 0 26px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .photo-gallery__heading-text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 427px;
+    margin: 0 auto;
+  }
 }
 
 .photo-gallery__list {
