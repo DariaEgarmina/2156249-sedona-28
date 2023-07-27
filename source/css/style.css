@@ -291,7 +291,7 @@
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .intro--minor {
-    background-image: url("../../img/background/intro-background-minor@2x.jpg");
+    background-image: url("../img/background/intro-background-minor@2x.jpg");
   }
 }
 @media (min-width: 768px) {
