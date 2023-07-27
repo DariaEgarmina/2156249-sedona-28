@@ -75,19 +75,19 @@
             <ul class="form-group__list form-group__list--name">
               <li class="form-group__item">
                 <label class="form-group__label">
-                  Имя*:
+                  <span class="form-group__label-position">Имя*:</span>
                   <input class="form-group__input" type="text" name="name" placeholder="Пётр" required />
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__label">
-                  Фамилия*:
+                  <span class="form-group__label-position">Фамилия*:</span>
                   <input class="form-group__input" type="text" name="lastname" placeholder="Пустота" required />
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__label">
-                  Отчество:
+                  <span class="form-group__label-position">Отчество:</span>
                   <input class="form-group__input" type="text" name="middlename" placeholder="Викторович" />
                 </label>
               </li>
@@ -100,14 +100,14 @@
             <ul class="form-group__list form-group__list--contacts">
               <li class="form-group__item">
                 <label class="form-group__label form-group__label--tel">
-                  Контактный телефон*:
+                  <span class="form-group__label-position">Контактный телефон*:</span>
                   <input class="form-group__input form-group__input--tel" type="tel" name="phone"
                     placeholder="Введите телефон" required />
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__label form-group__label--email">
-                  Электронная почта*:
+                  <span class="form-group__label-position">Электронная почта*:</span>
                   <input class="form-group__input form-group__input--email" type="email" name="email"
                     placeholder="Введите e-mail" required />
                 </label>
@@ -115,7 +115,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--full form-group form-group--impressions">
-            <legend class="form-group__title form-group__title--decor">
+            <legend class="form-group__title form-group__title--impressions form-group__title--decor">
               Ваше общее впечатление:
             </legend>
             <ul class="form-group__list form-group__list--impressions">
@@ -144,7 +144,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--full form-group form-group--sights">
-            <legend class="form-group__title form-group__title--decor">
+            <legend class="form-group__title form-group__title--sights form-group__title--decor">
               Посещенные <br />
               достопримечательности:
             </legend>
@@ -230,7 +230,7 @@
   </div>
   <!-- Для показа модального окна на секцию с классом "modal"
   нужно повесить модификатор "modal--open" -->
-  <section class="modal">
+  <section class="modal modal--failure">
     <div class="modal__content modal-content heading">
       <h2 class="modal-content__title heading__title">Что-то пошло не так!</h2>
       <p class="modal-content__text heading__text">
@@ -240,7 +240,7 @@
       <button class="modal-content__button modal-content__button--ok button" type="button">Ок</button>
     </div>
   </section>
-  <section class="modal">
+  <section class="modal modal--success">
     <div class="modal__content modal-content modal-content--success heading">
       <h2 class="modal-content__title modal-content__title--success heading__title">Ваш отзыв отправлен!</h2>
       <p class="modal-content__text heading__text">

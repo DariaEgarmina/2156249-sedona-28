@@ -1,6 +1,5 @@
 .advantages {
   padding: 32px 0 0 0;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 49px 0 0 0;
@@ -8,25 +7,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 59px 0 0 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 57px;
-    left: 0;
-    top: -56px;
-    background-image: url("../img/svg/intro-triangle.svg");
-    background-position: center;
-
-    @media (min-width: $tablet-width) {
-      background-image: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/svg/intro-triangle.svg");
-    }
   }
 }
 

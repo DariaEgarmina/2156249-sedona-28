@@ -53,6 +53,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: $mobile-width-only) {
+    max-height: 400px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 267px;
+  }
+
+  &--full {
+    @media (min-width: $tablet-width) {
+      min-height: 400px;
+    }
+  }
 }
 
 .card__figcaption {
@@ -108,6 +122,6 @@
 .card__likes {
   @media (min-width: $tablet-width) {
     align-self: flex-start;
-    margin-top: 10px;
+    margin-top: 6px;
   }
 }

@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    padding: 55px 47px 49px 46px;
+    padding: 34px 47px 49px 46px;
   }
 
   &--success {
@@ -29,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    line-height: 40px;
   }
 
   &--success {
@@ -39,10 +40,10 @@
 }
 
 .modal-content__text {
-  margin: 0 0 28px 0;
+  margin: 0 0 37px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 57px;
   }
 }
 
@@ -61,7 +62,11 @@
 
 .modal-content__button {
   padding: 18px 5px 14px 5px;
-  text-transform: uppercase;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 
   &--ok {
     min-width: 180px;
@@ -73,6 +78,7 @@
 
   &--close {
     min-width: 280px;
+
 
     @media (min-width: $tablet-width) {
       min-width: 458px;

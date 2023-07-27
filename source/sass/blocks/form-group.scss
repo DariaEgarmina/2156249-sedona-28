@@ -6,6 +6,7 @@
 
   &--name {
     position: relative;
+    margin-bottom: 65px;
 
     @media (min-width: $tablet-width) {
       width: calc(50% - 29px);
@@ -13,18 +14,7 @@
 
     @media (min-width: $desktop-width) {
       width: calc(50% - 50px);
-    }
-  }
-
-  &--contacts {
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      width: calc(50% - 29px);
-    }
-
-    @media (min-width: $desktop-width) {
-      width: calc(50% - 50px);
+      margin-bottom: 72px;
     }
   }
 
@@ -43,6 +33,46 @@
       right: -50px;
     }
   }
+
+  &--contacts {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: calc(50% - 29px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(50% - 50px);
+    }
+  }
+
+  &--impressions {
+    margin-bottom: 48px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 74px;
+    }
+  }
+
+  &--sights {
+    margin-bottom: 48px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 86px;
+    }
+  }
+
+  &--emotions {
+    margin-bottom: 56px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 47px;
+    }
+  }
 }
 
 .form-group__title {
@@ -58,6 +88,18 @@
     font-size: 21px;
     margin-bottom: 28px;
     width: 100%;
+  }
+
+  &--impressions {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &--sights {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
   }
 
   &--decor {
@@ -122,7 +164,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      column-gap: 28px;
+      column-gap: 64px;
     }
   }
 
@@ -184,6 +226,10 @@
   }
 }
 
+.form-group__label-position {
+  padding-left: 18px;
+}
+
 .form-group__input {
   width: 100%;
 
@@ -197,6 +243,8 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
   }
 
   &:hover {
@@ -247,6 +295,8 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
   }
 
   &:hover {
