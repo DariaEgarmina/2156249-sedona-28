@@ -275,11 +275,14 @@
 
 .advantages__image {
   width: 100%;
-  height: auto;
-  max-height: 256px;
+  height: 100%;
   object-fit: cover;
   display: block;
   flex-grow: 1;
+
+  @media (max-width: $mobile-width-only) {
+    max-height: 256px;
+  }
 }
 
 .advantages__title {

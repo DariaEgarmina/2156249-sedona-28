@@ -53,10 +53,13 @@
 
     @media (min-width: $tablet-width) {
       padding: 95px 154px 118px 157px;
+      background-size: 156%;
+      background-position: bottom right 50%;
     }
 
     @media (min-width: $desktop-width) {
       padding: 101px 371px 120px 369px;
+      background-size: 100%;
     }
   }
 }

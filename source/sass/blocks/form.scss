@@ -37,6 +37,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 324px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
